@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liên hệ</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+    .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%
+        }
+        .link .left img{
+            display: block;
+            margin-left: 65px;
+            margin-top: 20px;
+            max-width: 20%;
+        }
+        .link {
+             font-size: 14px;
+             text-align: right;
+             margin-right: 30px;
+             letter-spacing: 2px;
+             }
+        .link a{
+        color:black;
+        text-decoration:none;
+        }
+        .link a:visited{
+        color: black;
+        text-decoration:none;
+        }
+        a:hover{
+        color: red; 
+        
+        } 
+        
+        .slg{
+            font-variant: small-caps;
+            font-size: 25px;
+            margin-right: 30px;
+            margin-top: 10px;
+            }
+     .link>ul>li{
+            position: relative;
+            display: inline-block;
+        }
+        .link>ul>li>a{
+            display: block;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            color: black;
+            padding: 0 10px;
+            line-height: 40px;
+
+        }
+        .link ul ul{
+            position: absolute;
+            display: none;
+            padding: 0px;
+            margin: 0px;
+            list-style:none;
+            background-color: white;
+            width: 150px;
+            box-shadow: 0 0 1px gray;
+            z-index: 1;
+
+        }
+        .link>ul{
+            padding: 0px;
+            margin: 0px;    
+            list-style: none;
+            background-color: white;
+            text-align: center;
+        }
+        .link ul ul a{
+            display: block;
+            color: black; 
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: 14px;
+            padding: 0 5px;
+        }
+        .link>ul>li:hover>ul{
+            display: block;
+        }
+        .link>ul>li>a:hover{
+            color: red;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .link ul ul a:hover{
+            font-size: 15px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    .container{
+    margin-left:  300px;
+    padding:auto;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 0 10px black;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+.btnForm{
+        padding: 8px 30px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: white;
+        color: ;
+        box-shadow: inset 0 0 5px black;
+
+}
+.btnForm:hover {
+  color: gray; 
+  font-weight: bold;
+  box-shadow: 0 0 5px gray;
+
+}
+
+label{
+    float: left;
+    margin-left: 5px;
+}
+h3{
+text-align: center;
+}
+p{
+    margin-left: 5px;
+}
+.bg{
+    background-color: lightgray;
+}
+</style>
+</head>
+<body>
+    <nav class="link">
+        <ul>    
+        <li><a class="left" href="gc568.html"><img src="LOGOGC.jpg" ></a></li>
+        <li><a href="tintuc.html">TIN TỨC</a> &#160;</li> 
+        <li><a href="#3">TÌM KIẾM</a> &#160;
+          <ul>
+<form method=get action="http://www.google.com.vn/search">
+<table border="gray">
+     <tr><td>
+     <a href="http://www.google.com.vn/"><img src="logofind.jpg" width="50" height="50" alt="google"></a>
+     </td>
+     <td>
+     <input type=text name=q size=31 maxlength=255>
+     <input type=submit name=btng value="Tìm kiếm"><br>
+     <input type=hidden name=domains value="gc568">
+     GC568 <br>
+     </td></tr>
+</table>
+</form>
+          </ul>
+        </li> 
+        <li>
+            <a href="#">CỬA HÀNG</a> &#160;
+        <ul>
+            <li><a href="adidas.html">ADIDAS</a></li>
+            <li><a href="nike.html">NIKE</a></li>
+            <li><a href="newbalance.html">NEW BALANCE</a></li>
+            <li><a href="puma.html">PUMA</a></li>
+            <li><a href="fila.html">FILA</a></li>
+        </ul>
+        </li>
+        <li><a href="#5">HỎI ĐÁP</a>    &#160;
+            <ul>
+            <li><a href="gopy.html">LIÊN HỆ</a></li>
+            <li><a href="lienhe.html">HỎI ĐÁP</a></li>
+            </ul>
+        </li>
+        </ul> 
+        </nav>
+<div class="box">
+</div>    
+<article class="bg">   
+<section class="container">
+<h3>Liên hệ với chúng tôi theo form</h3>
+<p class="mb10">Những vị trí có dấu (<em class="note">*</em>) là bắt buộc phải có.</p>
+<form action="" method="post" name="myform">
+<input type="hidden" id="date" name="date" value="27/02/2019"/>
+<table class="contactForm">
+<tr class="first">
+<th><label for="type">Liên hệ:</label></th>
+<td><select id="type" name="type">
+<option value="1">Đổi trả hàng</option>
+<option value="2">Góp ý</option>
+</select></td>
+</tr>
+<tr>
+<th><label for="name">Họ và tên:</label><em class="note">*</em></th>
+<td><input type="text" id="name" name="name" value="" class="size01" /></td>
+</tr>
+<tr>
+<th><label for="address">Địa chỉ:</label></th>
+<td><input type="text" id="address" name="address" value="" class="size01" /></td>
+</tr>
+<tr>
+<th><label for="phone">Số điện thoại:</label></th>
+<td><input type="text" id="phone" name="phone" value="" class="size01" /></td>
+</tr>
+<tr>
+<th><label for="email">Email:</label><em class="note">*</em></th>
+<td><input type="text" id="email" name="email" value="" class="size01" /></td>
+</tr>
+<tr>
+<th><label for="title">Tiêu đề liên hệ:</label><em class="note">*</em></th>
+<td><input type="text" id="title" name="title" value="" class="size02" /></td>
+</tr>
+<tr class="last">
+<th><label for="subject">Nội dung liên hệ:</label><em class="note">*</em></th>
+<td><textarea id="subject" name="subject" rows="12" cols="60" class="size03"></textarea></td>
+</tr>
+</table>    
+<section>
+    <div class="center">
+        <input class="btnForm" type="submit" value="Gửi liên hệ"></input>
+    </div>
+</form>
+</section>
+</aritlce>
+</body>
+</html>
